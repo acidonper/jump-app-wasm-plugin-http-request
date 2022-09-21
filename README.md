@@ -20,7 +20,7 @@ It is required to install and configure some components in order to be able to w
 
 Please follow the next steps in order to ensure the laptop has the required tools.
 
-- Install podman (Official Doc)[https://podman.io/getting-started/installation]
+- Install podman [Official Doc](https://podman.io/getting-started/installation)
 
 - Download the respective Tinygo container image
 
@@ -28,7 +28,7 @@ Please follow the next steps in order to ensure the laptop has the required tool
 docker pull docker.io/tinygo/tinygo:0.25.0
 ```
 
-- Install the respective golang version (Official Doc)[https://go.dev/doc/install]
+- Install the respective golang version [Official Doc](https://go.dev/doc/install)
 
 ```$bash
 sudo tar -C /usr/local/bin -xzf ~/Downloads/go1.19.1.linux-amd64.tar.gz
