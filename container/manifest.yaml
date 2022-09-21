@@ -1,0 +1,8 @@
+schemaVersion: 1
+  
+name: header-append
+description: Just appends a header based on config
+version: 1.0.0
+phase: PreAuthZ
+priority: 100
+module: plugin.wasm

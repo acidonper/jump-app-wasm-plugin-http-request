@@ -1,0 +1,14 @@
+apiVersion: extensions.istio.io/v1alpha1
+kind: WasmPlugin
+metadata:
+  name: wasm-http-request
+  namespace: istio-system
+spec:
+  selector:
+    matchLabels:
+      app: back-golang
+  url: oci://quay.io/acidonpe/wasm-http-request:latest
+  phase: STATS
+  pluginConfig:
+    first-header: some-value
+    another-header: another-value
