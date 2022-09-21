@@ -55,6 +55,13 @@ make container.push
 oc apply -f example/wasmplugin.yaml
 ```
 
+In order to verify if the WASM plugin has been loaded properly, it is possible to review the istiod logs:
+
+```$bash
+# Istiod Logs
+2022-09-21T10:02:47.574533Z info ads Push debounce stable[23] 1 for config WasmPlugin/istio-system/wasm-http-request: 100.195111ms since last change, 100.194678ms since last push, full=true
+```
+
 ## Test
 
 It is required to execute HTTP request to back-golang and review back-python is receiving HTTP requests as well from back-golang.
