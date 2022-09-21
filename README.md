@@ -49,6 +49,12 @@ In terms of steps, the following procedure should be executed:
 make container.push
 ```
 
+- Deploy the filter in Openshift
+
+```$bash
+oc apply -f example/wasmplugin.yaml
+```
+
 ## Test
 
 It is required to execute HTTP request to back-golang and review back-python is receiving HTTP requests as well from back-golang.
